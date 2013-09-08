@@ -23,7 +23,30 @@ The app is an example app to illustrate how all three are use in concert.
 ```
 $ cd [path_to]random_string_service
 $ bundle
-$ cf push
+$cf push
+$
+$Name> random-string-service
+$Instances> 1
+$
+$1: 128M
+$2: 256M
+$3: 512M
+$4: 1G
+$Memory Limit> 256M
+$
+$1: random-string-service
+$2: none
+$Subdomain> random-string-service
+$
+$1: georg.cf-app.com
+$2: none
+$Domain> georg.cf-app.com
+$
+$cf apps
+$Getting applications in bootstrap-space... OK
+$
+$name                    status    usage      url
+$random-string-service   running   1 x 256M   random-string-service.georg.cf-app.com
 ```
 
 Get the url for the app for the config of the gateway to point to it.
