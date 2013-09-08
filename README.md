@@ -2,8 +2,10 @@
 
 This is an example of a service, a service gateway and an app in Cloud Foundry v2 and meant to illustrate how to utilize a service.
 There are two blog posts describing the work in this repository.
-[Introduction to Service and Service Gateway]()
-[Describing how to set up the service so that it is usable in Cloud Foundry and binding it to an app]()
+
+[Introduction to Service and Service Gateway](http://pivotallabs.com/creating-a-service-gateway-in-cloud-foundry/)
+
+[Describing how to set up the service so that it is usable in Cloud Foundry and binding it to an app](http://pivotallabs.com)
 
 The are three distinct parts in this repo:
 1) The service (random_string_service)
