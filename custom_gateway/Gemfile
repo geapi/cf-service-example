@@ -1,0 +1,21 @@
+source 'https://rubygems.org'
+
+ruby '1.9.3'
+
+gem 'sinatra'
+gem 'thin', '1.5.1'
+gem 'yajl-ruby'
+gem 'vcap_common', :git => 'https://github.com/cloudfoundry/vcap-common.git', :ref => '635f60e92f54c3dd3458aa2001c94b292953dee1'
+gem 'cf-uaa-lib'
+gem 'cf'
+
+group :test do
+  gem 'rspec'
+  gem 'rack-test'
+  gem 'webmock'
+end
+
+group :development do
+  gem 'debugger'
+  gem 'admin-cf-plugin'
+end

@@ -1,0 +1,8 @@
+uaa_client_id: "cf"
+uaa_endpoint: http://uaa.example.com
+uaa_client_auth_credentials:
+  username: services
+  password: Sistani601/vacuome
+token: insert mysql-rds token
+cc_api_version: v2
+check_orphan_interval: 7200

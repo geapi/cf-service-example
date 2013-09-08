@@ -1,0 +1,28 @@
+cloud_controller_uri: http://ccng.domain.com
+api_endpoint: http://api.domain.com
+api_credentials:
+  username: services
+  password: password
+  space: pearl
+  organization: pivotal
+uaa_client_id: "cf"
+uaa_endpoint: http://uaa.domain.com
+uaa_client_auth_credentials:
+  username: services
+  password: password
+cc_api_version: v2
+check_orphan_interval: 7200
+service_auth_tokens:
+  custom-service: "custom service token"
+service:
+  name: 'custom-service'
+  unique_id: 'custom-service-1.0'
+  version: '1.0'
+  description: 'Custom Service'
+  provider: pivotal
+  plans:
+    '10req':
+      unique_id: 'custom-service-1.0-10'
+      description: 'Shared service, 10 requests'
+      free: true
+      extra: '{"cost":0.0,"bullets":[{"content":"10 requests"}]}'

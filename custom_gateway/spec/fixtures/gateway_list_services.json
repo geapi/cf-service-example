@@ -1,0 +1,178 @@
+{
+  "total_results": 3,
+  "total_pages": 1,
+  "prev_url": null,
+  "next_url": null,
+  "resources": [
+    {
+      "metadata": {
+        "guid": "24f9c534-501b-4e66-9589-224395e1d0b8",
+        "url": "/v2/services/24f9c534-501b-4e66-9589-224395e1d0b8",
+        "created_at": "2013-06-21 18:19:09 +0000",
+        "updated_at": "2013-06-26 22:22:38 +0000"
+      },
+      "entity": {
+        "label": "rds-mysql",
+        "provider": "aws",
+        "url": "http://10.10.32.10:33884",
+        "description": "RDS MySQL by Amazon",
+        "version": "n/a",
+        "info_url": null,
+        "active": true,
+        "unique_id": "17523a3a-44fe-4c59-a962-af6cd06e0f92",
+        "extra": "{\"listing\":{\"imageUrl\":\"https://s3.amazonaws.com/cf-core-service-assets/mysql_aws_rds.png\",\"blurb\":\"Amazon MySQL Relational Database Service\"},\"provider\":{\"name\":\"AWS\"}}",
+        "service_plans_url": "/v2/services/24f9c534-501b-4e66-9589-224395e1d0b8/service_plans",
+        "service_plans": [
+          {
+            "metadata": {
+              "guid": "b56b4952-af98-4131-bd1a-f0a5e3301be3",
+              "url": "/v2/service_plans/b56b4952-af98-4131-bd1a-f0a5e3301be3",
+              "created_at": "2013-06-21 18:19:09 +0000",
+              "updated_at": "2013-06-26 22:22:38 +0000"
+            },
+            "entity": {
+              "name": "10mb",
+              "free": true,
+              "description": "Shared service, 10MB storage, 10 connections",
+              "service_guid": "24f9c534-501b-4e66-9589-224395e1d0b8",
+              "extra": "{\"cost\":0.0,\"bullets\":[{\"content\":\"10 MB storage\"},{\"content\":\"10 connections\"}]}",
+              "unique_id": "a9a5f47c-134d-48e1-94db-26111b03a55f",
+              "service_instances_url": "/v2/service_plans/b56b4952-af98-4131-bd1a-f0a5e3301be3/service_instances",
+              "service_instances": [
+                {
+                  "metadata": {
+                    "guid": "7db61bd5-1487-4a08-a7fc-c5f3f269f96e",
+                    "url": "/v2/service_instances/7db61bd5-1487-4a08-a7fc-c5f3f269f96e",
+                    "created_at": "2013-06-24 18:03:16 +0000",
+                    "updated_at": null
+                  },
+                  "entity": {
+                    "name": "rds-mysql-11bd7",
+                    "credentials": {
+                      "name": "d948ccbadd59d4f0ba643ad97233b81a8",
+                      "hostname": "mysql-service-public.ca6csy0o0rj5.us-east-1.rds.amazonaws.com",
+                      "host": "mysql-service-public.ca6csy0o0rj5.us-east-1.rds.amazonaws.com",
+                      "port": 3306,
+                      "user": "ukTjSU4TRR51v",
+                      "username": "ukTjSU4TRR51v",
+                      "password": "pespQYgn449iE",
+                      "node_id": "rds_mysql_node_10mb_0"
+                    },
+                    "service_plan_guid": "b56b4952-af98-4131-bd1a-f0a5e3301be3",
+                    "space_guid": "8309a32a-d1f2-45f5-8cad-c77c694474fe",
+                    "gateway_data": {
+                      "plan": "10mb",
+                      "version": "n/a"
+                    },
+                    "dashboard_url": null,
+                    "service_bindings_url": "/v2/service_instances/7db61bd5-1487-4a08-a7fc-c5f3f269f96e/service_bindings",
+                    "space_url": "/v2/spaces/8309a32a-d1f2-45f5-8cad-c77c694474fe",
+                    "service_plan_url": "/v2/service_plans/b56b4952-af98-4131-bd1a-f0a5e3301be3"
+                  }
+                },
+                {
+                  "metadata": {
+                    "guid": "a9c6a662-657d-41b0-8b09-0c26d763c5dc",
+                    "url": "/v2/service_instances/a9c6a662-657d-41b0-8b09-0c26d763c5dc",
+                    "created_at": "2013-06-25 15:23:04 +0000",
+                    "updated_at": null
+                  },
+                  "entity": {
+                    "name": "airquality-db",
+                    "credentials": {
+                      "name": "d4b0e06b7d92c40ad8d667bd9fc3edeb1",
+                      "hostname": "mysql-service-public.ca6csy0o0rj5.us-east-1.rds.amazonaws.com",
+                      "host": "mysql-service-public.ca6csy0o0rj5.us-east-1.rds.amazonaws.com",
+                      "port": 3306,
+                      "user": "utnjDmx4BydPk",
+                      "username": "utnjDmx4BydPk",
+                      "password": "pFag6cq5t0mP5",
+                      "node_id": "rds_mysql_node_10mb_0"
+                    },
+                    "service_plan_guid": "b56b4952-af98-4131-bd1a-f0a5e3301be3",
+                    "space_guid": "8309a32a-d1f2-45f5-8cad-c77c694474fe",
+                    "gateway_data": {
+                      "plan": "10mb",
+                      "version": "n/a"
+                    },
+                    "dashboard_url": null,
+                    "service_bindings_url": "/v2/service_instances/a9c6a662-657d-41b0-8b09-0c26d763c5dc/service_bindings",
+                    "space_url": "/v2/spaces/8309a32a-d1f2-45f5-8cad-c77c694474fe",
+                    "service_plan_url": "/v2/service_plans/b56b4952-af98-4131-bd1a-f0a5e3301be3"
+                  }
+                }
+              ],
+              "service_url": "/v2/services/24f9c534-501b-4e66-9589-224395e1d0b8"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "metadata": {
+        "guid": "a7a1436a-d33f-48c9-94d1-0f8fd6354c41",
+        "url": "/v2/services/a7a1436a-d33f-48c9-94d1-0f8fd6354c41",
+        "created_at": "2013-06-26 20:10:29 +0000",
+        "updated_at": "2013-06-26 22:22:38 +0000"
+      },
+      "entity": {
+        "label": "custom-gateway-n/a",
+        "provider": "aws",
+        "url": "http://custom-gateway.custom.example.org",
+        "description": "Custom Gateway",
+        "version": "n/a",
+        "info_url": null,
+        "active": true,
+        "unique_id": "ec01ff18-1680-4eb9-aa77-cc5a6eadddb3",
+        "extra": null,
+        "service_plans_url": "/v2/services/a7a1436a-d33f-48c9-94d1-0f8fd6354c41/service_plans",
+        "service_plans": [
+
+        ]
+      }
+    },
+    {
+      "metadata": {
+        "guid": "34bb3e49-4af3-4546-aaf5-196112ff856c",
+        "url": "/v2/services/34bb3e49-4af3-4546-aaf5-196112ff856c",
+        "created_at": "2013-06-26 21:50:43 +0000",
+        "updated_at": "2013-06-26 22:22:38 +0000"
+      },
+      "entity": {
+        "label": "custom-gateway-1.0",
+        "provider": "aws",
+        "url": "http://custom-gateway.custom.example.org",
+        "description": "Custom Gateway",
+        "version": "1.0",
+        "info_url": null,
+        "active": true,
+        "unique_id": "pg-1.0",
+        "extra": null,
+        "service_plans_url": "/v2/services/34bb3e49-4af3-4546-aaf5-196112ff856c/service_plans",
+        "service_plans": [
+          {
+            "metadata": {
+              "guid": "659074c8-5c5b-4d80-86e1-c045b6359758",
+              "url": "/v2/service_plans/659074c8-5c5b-4d80-86e1-c045b6359758",
+              "created_at": "2013-06-26 21:50:43 +0000",
+              "updated_at": null
+            },
+            "entity": {
+              "name": "10req",
+              "free": true,
+              "description": "Shared service, 10 requests",
+              "service_guid": "34bb3e49-4af3-4546-aaf5-196112ff856c",
+              "extra": "{\"cost\":0.0,\"bullets\":[{\"content\":\"10 requests\"}]}",
+              "unique_id": "pg-1.0-10",
+              "service_instances_url": "/v2/service_plans/659074c8-5c5b-4d80-86e1-c045b6359758/service_instances",
+              "service_instances": [
+
+              ],
+              "service_url": "/v2/services/34bb3e49-4af3-4546-aaf5-196112ff856c"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

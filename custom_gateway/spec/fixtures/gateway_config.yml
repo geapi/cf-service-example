@@ -1,0 +1,22 @@
+uaa_client_id: "cf"
+uaa_endpoint: http://uaa.example.com
+uaa_client_auth_credentials:
+  username: services
+  password: Sistani601/vacuome
+token: insert mysql-rds token
+cc_api_version: v2
+check_orphan_interval: 7200
+service_auth_tokens:
+  rds-mysql_aws: "insert mysql-rds token"
+service:
+  name: 'custom-service'
+  unique_id: 'custom-service-1.0'
+  version: '1.1'
+  description: 'Custom Gateway'
+  provider: aws
+  plans:
+    '10req':
+      unique_id: 'pg-1.0-10'
+      description: 'Shared service, 10 requests'
+      free: true
+      extra: '{"cost":0.0,"bullets":[{"content":"10 requests"}]}'
