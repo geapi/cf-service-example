@@ -18,8 +18,8 @@ The app is an example app to illustrate how all three are use in concert.
 
 -- The following description expects a working Cloud Foundry deploy, where you have cf-admin rights --
 
-# How to deploy the sample app with the RandomStringService
-## Deploy the service as an app
+## How to deploy the sample app with the RandomStringService
+### Deploy the service as an app
 ```
 $ cd [path_to]random_string_service
 $ bundle
@@ -28,7 +28,7 @@ $ cf push
 
 Get the url for the app for the config of the gateway to point to it.
 
-## Deploy Custom Gateway
+### Deploy Custom Gateway
 
 Before trying to push the gateway, make sure it is configured properly for your CF configuration
 edit config/gateway_config.yml to point at correct URLs, and update its credentials accordingly.
@@ -44,7 +44,7 @@ $ cf push
 
 wait until the custom-service is running  (check with `cf apps`)
 
-## Deploy SampleApp
+### Deploy SampleApp
 
 - make sure cf apps doesn't show custom-app
 - create the custom service that the app will bind to
