@@ -24,6 +24,6 @@ describe 'Custom Gateway' do
     last_response.should be_ok
     rsp = VCAP::Services::Api::GatewayHandleResponse.decode(last_response.body)
     rsp.service_id.should == 'hid0'
-    rsp.credentials["url"].should == "http://custom-gateway-service.custom.example.org/CustomWorksAPI/api"
+    rsp.credentials["url"].should == "http://custom-gateway-service.custom.example.org"
   end
 end
