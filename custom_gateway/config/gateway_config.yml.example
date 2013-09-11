@@ -2,18 +2,18 @@ cloud_controller_uri: http://ccng.georg.cf-app.com
 api_endpoint: http://api.georg.cf-app.com
 api_credentials:
   username: services
-  password: service-password
+  password: password
   space: pearl
   organization: pivotal
 uaa_client_id: "cf"
 uaa_endpoint: http://uaa.georg.cf-app.com
 uaa_client_auth_credentials:
   username: services
-  password: service-password
+  password: password
 cc_api_version: v2
 check_orphan_interval: 7200
 service_auth_tokens:
-  custom-service: "random string service token"
+  random-string-service: "random string service token"
 service:
   name: 'random-string-service'
   unique_id: 'random-string-service-1.0'
