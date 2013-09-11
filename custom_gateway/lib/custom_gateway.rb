@@ -27,7 +27,7 @@ class CustomGateway < Sinatra::Base
     url_parts[0] = "#{vcap_application['name']}-service"
     url = 'http://' + url_parts.join(".")
 
-    rsp = VCAP::Services::Api::GatewayHandleResponse.new(service_id: 'hid0', configuration: '', credentials: {url: "#{url}/CustomWorksAPI/api"})
+    rsp = VCAP::Services::Api::GatewayHandleResponse.new(service_id: 'hid0', configuration: '', credentials: {url: url})
     headers 'Content-Type' => 'application/json'
     body rsp.encode
   end

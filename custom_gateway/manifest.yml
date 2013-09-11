@@ -1,0 +1,8 @@
+---
+applications:
+- name: random-string-service
+  memory: 256M
+  instances: 1
+  host: random-string-service
+  domain: georg.cf-app.com
+  path: .
