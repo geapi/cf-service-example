@@ -5,7 +5,7 @@ There are two blog posts describing the work in this repository.
 
 [Introduction to Service and Service Gateway](http://pivotallabs.com/creating-a-service-gateway-in-cloud-foundry/)
 
-[Describing how to set up the service so that it is usable in Cloud Foundry and binding it to an app](http://pivotallabs.com)
+[Describing how to set up the service so that it is usable in Cloud Foundry and binding it to an app](http://pivotallabs.com/creating-a-service-gateway-in-cloud-foundry-part-2)
 
 The are three distinct parts in this repo:
 1) The service (random_string_service)
