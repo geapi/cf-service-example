@@ -1,0 +1,14 @@
+---
+applications:
+- name: sample-app
+  memory: 256M
+  instances: 1
+  host: sample-app
+  domain: georg.cf-app.com
+  path: .
+  services:
+    random-string-service-sample:
+      label: random-string-service
+      provider: pivotal
+      version: '1.0'
+      plan: 10req

@@ -8,7 +8,7 @@ class SampleApp < Sinatra::Base
   end
 
   get "/" do
-    random_string = ::Net::HTTP.get(URI("#{random_string_service_url}+/66"))
+    random_string = ::Net::HTTP.get(URI("#{random_string_service_url}/random_string/66"))
     <<-HTML
 <center>
 <h2>Random String</h2>
@@ -20,7 +20,7 @@ class SampleApp < Sinatra::Base
 
   def random_string_service_url
     unless ENV["VCAP_SERVICES"]
-      return "http://random-string-service.georg.cf-app.com/random_string"
+      return "http://random-string-service-service.georg.cf-app.com/random_string"
     end
 
     vcap_services = JSON.parse(ENV["VCAP_SERVICES"])

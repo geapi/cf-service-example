@@ -61,11 +61,11 @@ Then create the service auth token and push
 ```
 $ cd [path_to]custom_gateway
 $ bundle
-$ cf create-service-auth-token custom-service service-provider --token 'custom service token'
+$ cf create-service-auth-token random-string-service pivotal --token 'random string service token'
 $ cf push
 ```
 
-wait until the custom-service is running  (check with `cf apps`)
+wait until the custom-gateway is running  (check with `cf apps`)
 
 ### Deploy SampleApp
 
@@ -74,6 +74,27 @@ wait until the custom-service is running  (check with `cf apps`)
 - this assumes the app manifest specifies that it wants to bind to that service
 
 ```
-$ cf create-service custom-service
-> custom-service-sample-app
+$ cf create-service random-string-service
+> random-string-service-sample
+$cf push
+
+Binding sample-app.georg.cf-app.com to sample-app... OK
+
+Create services for application?> y
+
+1: random-string-service 1.0, via pivotal
+2: rds-mysql n/a, via aws
+3: user-provided , via
+What kind?> 2
+
+Name?> random-string-service-sample
+
+1: 10req: Shared service, 10 requests
+Which plan?> 1
+
+Creating service random-string-service-sample... OK
+Binding random-string-service-sample to sample-app... OK
+Create another service?> n
+
+Bind other services to application?> n
 ```
